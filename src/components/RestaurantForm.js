@@ -31,12 +31,21 @@ const RestaurantForm = ({ restaurant }) => {
     }
   }, [restaurant]);
 
+  const isValidContactNumber = (number) => {
+    const phoneRegex = /^[7-9]\d{9}$/;
+    return phoneRegex.test(number);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!name || !description || !location || !contact || !email || !hours) {
       setError("All fields are required.");
       return;
     }
+    if (!isValidContactNumber(contact)) {
+        setError('Invalid contact number. It should be 10 digits long and start with 7, 8, or 9.');
+        return;
+      }
     const formData = {
       name,
       description,
