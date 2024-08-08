@@ -1,0 +1,34 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Test Restaurant 1",
+      "description": "This is a test restaurant 1",
+      "location": "Location 1",
+      "contact": "123-456-7890",
+      "email": "test1@example.com",
+      "hours": "9 AM - 9 PM",
+      "image": "",
+      "menu": [
+        "Margherita Pizza",
+        "Pepperoni Pizza",
+        "BBQ Chicken Pizza"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Test Restaurant 2",
+      "description": "This is a test restaurant 2",
+      "location": "Location 2",
+      "contact": "987-654-3210",
+      "email": "test2@example.com",
+      "hours": "10 AM - 10 PM",
+      "image": "",
+      "menu": [
+        "Cheeseburger",
+        "Veggie Burger",
+        "Bacon Burger"
+      ]
+    }
+  ]
+}
